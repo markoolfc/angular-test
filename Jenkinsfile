@@ -37,8 +37,8 @@ pipeline{
       steps{
         sh '''
           oc new-app angular-test
-          oc expose svc/myapp
-          oc get route myapp
+          oc expose svc/angular-test
+          oc get route angular-test
         '''
       }
     }
