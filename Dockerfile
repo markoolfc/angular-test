@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM bitnami/nginx:latest
 
 ## Copy our nginx config
 COPY nginx/ /etc/nginx/conf.d/
