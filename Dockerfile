@@ -1,4 +1,6 @@
-FROM bitnami/nginx:latest
+FROM nginx
+
+RUN chmod g+rwx /var/cache/nginx /var/run /var/log/nginx
 
 ## Copy our nginx config
 COPY nginx/ /etc/nginx/conf.d/
