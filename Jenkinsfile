@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage ('checkout'){
       steps{
-        git url: 'https://github.com/markoolfc/angular-test'
+        git url: ''
       }
     }
     stage ('install modules'){
